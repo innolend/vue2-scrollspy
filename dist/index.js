@@ -59,7 +59,7 @@ function install(Vue) {
                     i++;
                 }
 
-                vnode.context.$data[expression] = i ? i : 0;
+                vnode.context.$data[expression] = i ? i - 1 : 0;
             }
 
             function scrollTo(index) {
